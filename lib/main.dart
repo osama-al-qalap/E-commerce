@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
     var authprovider = Provider.of<auth_provider>(context, listen: false);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: manage_product(),
+      home: authprovider.check_auth(),
     );
   }
 }
